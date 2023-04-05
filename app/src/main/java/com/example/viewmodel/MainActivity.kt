@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.viewmodel.viewmodel_recycleview.StudentActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,10 +20,10 @@ class MainActivity : AppCompatActivity() {
         btnStudent = findViewById(R.id.btnStudent)
         btnUser = findViewById(R.id.btnUser)
 
-//            btnStudent.setOnClickListener {
-//                val intent = Intent(this, StudentActivity::class.java)
-//                startActivity(intent)
-//            }
+            btnStudent.setOnClickListener {
+                val intent = Intent(this, StudentActivity::class.java)
+                startActivity(intent)
+            }
 
         btnVM.setOnClickListener {
             startActivity(Intent(this, UsingViewModel::class.java))
